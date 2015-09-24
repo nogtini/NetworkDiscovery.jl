@@ -1,0 +1,20 @@
+<svg width="500" height="500">
+<style type="text/css">
+<![CDATA[
+line.link {
+  stroke: #000000;
+  stroke-opacity: 0.5;
+  stroke-width: 1.5px;
+}
+]]>
+</style>
+{{#:edges}}
+    <line class="link" x1="{{:x1s}}" x2="{{:x2s}}" y1="{{:y1s}}" y2="{{:y2s}}"></line>
+{{/:edges}}
+{{#:nodes}}
+    <circle class="node" cx="{{:xs}}" cy="{{:ys}}" r="3px" style="fill:{{:color}}; fill-opacity:0.9;"></circle>
+{{/:nodes}}
+    <circle cx="{{:tx}}" cy="{{:ty}}" r="10px" style="stroke:#FF0000; fill-opacity:0.0;"></circle>
+</svg>
+
+
