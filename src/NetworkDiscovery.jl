@@ -54,11 +54,15 @@ type ProbeNode
     ProbeNode()=new()
     ProbeNode(i)=new(i)
 end
+==(u::ProbeNode, v::ProbeNode) = u.node==v.node
+hash(a::ProbeNode) = hash(a.node)
 type GuessAffiliation
     community::Int
     GuessAffiliation()=new()
     GuessAffiliation(i)=new(i)
 end
+==(u::GuessAffiliation, v::GuessAffiliation) = u.community==v.community
+hash(a::GuessAffiliation) = hash(a.community)
 
 # reward
 reward(p::CommunityAffiliationPOMDP, s, a::ProbeNode) = 0.0
@@ -88,6 +92,8 @@ type Neighborhood <: AbstractDistribution
     neighbors::Vector{Int}
     Neighborhood() = new()
 end
+==(u::Neighborhood, v::Neighborhood) = u.neighbors==v.neighbors
+hash(o::Neighborhood) = hash(o.neighbors)
 create_observation(::CommunityAffiliationPOMDP) = Neighborhood()
 create_observation_distribution(::CommunityAffiliationPOMDP) = Neighborhood()
 function observation(p::CommunityAffiliationPOMDP, s, a::ProbeNode, d=create_observation_distribution(p))
