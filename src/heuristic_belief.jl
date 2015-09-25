@@ -139,21 +139,6 @@ function belief(p::CommunityAffiliationPOMDP, b::RevealedGraph, a::ProbeNode, o:
         push!(d.revealed_nodes, n)
     end
 
-    # update highest degree
-    # search = o.neighbors
-    # hdeg = degree(d, d.highest_degree_not_probed)
-    # if d.highest_degree_not_probed < 0
-    #     hdeg = -1
-    #     search = revealed_nodes
-    # end
-    # for i in search
-    #     degi = degree(d, i)
-    #     if degi > hdeg && !(i in d.probed)
-    #         d.highest_degree_not_probed = i
-    #         hdeg = degi 
-    #     end
-    # end
-
     return d
 end
 

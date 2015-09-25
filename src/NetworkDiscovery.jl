@@ -63,7 +63,7 @@ end
 # reward
 reward(p::CommunityAffiliationPOMDP, s, a::ProbeNode) = 0.0
 function reward(p::CommunityAffiliationPOMDP, s, a::GuessAffiliation)
-    return p.reward*(a.community==p.true_network.labels[p.node])
+    return p.reward*(a.community==s.labels[p.node])
 end
 
 # state transitions
