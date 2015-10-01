@@ -6,7 +6,7 @@ A report describing this project is located in [doc/report.pdf](https://github.c
 
 The ipython notebooks in [notebooks](https://github.com/sisl/NetworkDiscovery.jl/tree/master/notebooks) contain basic usage examples.
 
-This code was designed to be used with the [POMDPs.jl](https://github.com/sisl/POMDPs.jl) framework. Unfortunately changes to this framework will probably make this code incompatible, so it will have to be updated to be used in the future.
+This code was designed to be used with the [POMDPs.jl](https://github.com/sisl/POMDPs.jl) framework. Unfortunately changes to this framework will probably make this code incompatible, so it will have to be updated to be used in the future. If you would like to resurrect this code and start using it, please contact me at zsunberg(at)stanford.edu.
 
 The MCTS solver used for this is implemented in [POMCP.jl](https://github.com/sisl/POMCP.jl).
 
