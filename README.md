@@ -1,6 +1,6 @@
 # NetworkDiscovery.jl
 
-Smart Social Network Discovery using POMDP framework.
+Smart Social Network Discovery using the POMDP framework.
 
 A report describing this project is located in [doc/report.pdf](https://github.com/sisl/NetworkDiscovery.jl/blob/master/doc/report.pdf).
 
@@ -12,7 +12,7 @@ The MCTS solver used for this is implemented in [POMCP.jl](https://github.com/si
 
 ## Installation
 
-```julia
+```
 julia> Pkg.clone("https://github.com/sisl/NetworkDiscovery.jl")
 ```
 
