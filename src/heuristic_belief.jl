@@ -1,4 +1,4 @@
-# belief for heuristics
+# belief
 type RevealedGraph <: Belief
     revealed_edges::Set{Edge}
     revealed_adj::Vector{Vector{Int}}
