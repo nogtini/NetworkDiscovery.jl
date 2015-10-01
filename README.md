@@ -10,6 +10,12 @@ This code was designed to be used with the [POMDPs.jl](https://github.com/sisl/P
 
 The MCTS solver used for this is implemented in [POMCP.jl](https://github.com/sisl/POMCP.jl).
 
+## Installation
+
+```julia
+julia> Pkg.clone("https://github.com/sisl/NetworkDiscovery.jl")
+```
+
 ## Important elements of the code
 
 ### NetworkDiscovery.jl includes the most important structures.
